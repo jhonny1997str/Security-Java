@@ -47,4 +47,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: jhonnystr/jhonnystr/java-security:latest
+          tags: jhonnystr/java-security:latest
