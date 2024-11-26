@@ -96,7 +96,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>java-security</finalName>
+
 	</build>
 
 </project>
