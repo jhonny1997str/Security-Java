@@ -2,9 +2,9 @@ name: Project CI/CD Flow
 
 on:
   push:
-    branches: [ feature/Jhonny ]
+    branches: [ main ]
   pull_request:
-    branches: [ feature/Jhonny ]
+    branches: [ main ]
 
 jobs:
   build:
