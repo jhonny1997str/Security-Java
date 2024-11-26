@@ -18,7 +18,7 @@ jobs:
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: solocali123#
-          POSTGRES_DB: docker_action
+          POSTGRES_DB: security_java
         options: --health-cmd="pg_isready -U postgres" --health-interval=5s --health-timeout=2s --health-retries=5
 
     steps:
@@ -47,4 +47,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: jhonnystr/jhonnystr/java-security
+          tags: jhonnystr/jhonnystr/java-security:latest
