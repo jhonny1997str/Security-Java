@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class AuthCredentials { // Declaración de la clase pública llamada AuthCredentials.
 
-    // Campo rivado para almacenar el correo electrónico del usuario.
+    // Campo privado para almacenar el correo electrónico del usuario.
     // La anotación @Data generará el método getEmail() y setEmail().
     private String email;
 
