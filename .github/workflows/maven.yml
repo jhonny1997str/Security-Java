@@ -10,6 +10,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:latest
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: solocali123#
+          POSTGRES_DB: security_java
+        options: --health-cmd="pg_isready -U postgres" --health-interval=5s --health-timeout=2s --health-retries=5
 
     steps:
       - name: Checkout code
