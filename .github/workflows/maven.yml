@@ -2,9 +2,9 @@ name: Project CI/CD Flow
 
 on:
   push:
-    branches: [ feature/Jhonny  ]
+    branches: [ main ]
   pull_request:
-    branches: [ feature/Jhonny  ]
+    branches: [ main  ]
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
           - 5432:5432
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: solocali123#
+          POSTGRES_PASSWORD:
           POSTGRES_DB: security_java
         options: --health-cmd="pg_isready -U postgres" --health-interval=5s --health-timeout=2s --health-retries=5
 
