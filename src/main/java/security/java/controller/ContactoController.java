@@ -20,7 +20,3 @@ public class ContactoController {
         return contactoRepository.findAll();
     }
 }
-//Estas clases son la base de la configuración de seguridad y la autenticación utilizando JWT y Spring Security.
-// La configuración de seguridad se maneja en SecurityConfig, mientras que TokensUtils gestiona la creación y
-// verificación de los tokens JWT. El servicio de detalles del usuario UserDetailServiceIml y la implementación
-// de UserDetailsImpl son cruciales para la carga de datos del usuario desde la base de datos.
